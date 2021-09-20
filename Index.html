@@ -13,22 +13,50 @@
 
   h1 {
     font-family: Lobster;
+    position: relative;
+    top: 30px;
+    text-align: right;
   }
   a {
     color: rgb(0, 0, 0);
   }
-  nav{
-      background-color: whitesmoke;
-      position:relative;
-      
-  }
+  
   body{
       background-color: teal;
   }
   h2{
       text-align: center;
   }
- 
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top:0%;
+  width:100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: black;
+}
+.active {
+  background-color: #04AA6D;
+}
 </style>
 
 <h1 class="red-text">Richie Blog</h1>
@@ -48,13 +76,20 @@
              <a>
                 Contact
              </a>
+             
+         </li>
+         <li style="float:right">
+           <a class="active" href="#project">project</a>
+         </li>
+         <li>
+           <a href="#Service"> Services</a>
          </li>
      </ul>   
     </nav>
     <section>
-        <h2>How I Transition Into tech</h2>
+        <h2>How I Transition Into Tech</h2>
         <figure>
-          <img src="image/tech.jpg" alt="young coding">
+          <img src="image/tech2.jpg" alt="young coding">
           <figcaption>
             Photo by: Photo by
             <a
@@ -85,6 +120,9 @@
           </p>
         </article>
       </section>
+      <footer>
+        Copyright &copy; 2021, Richie Blog
+      </footer>
 </main>
 
 </body>
